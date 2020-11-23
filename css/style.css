@@ -28,7 +28,7 @@ header {
 }
 
 .left-sidebar {
-  background-color: rgb(231, 143, 183);
+  background-color: #737293;
   width: 180px;
   grid-column: 1 / 2;
   margin: 0px;
@@ -55,6 +55,7 @@ footer {
   padding: 2rem;
   text-align: center;
   grid-column: 1 / 4;
+  z-index: 50;
 }
 
 div {
@@ -102,6 +103,7 @@ ul {
 li {
   float: left;
   padding: 0px 1em;
+  padding-top: 2em;
   background: #737293;
 }
 
@@ -111,7 +113,8 @@ li a, .dropbtn {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  width: 80px;
+  width: 90px;
+  padding: 5px;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -147,9 +150,13 @@ li.dropdown {
   display: block;
 }
 .leftsidemenu {
-  background-color: rgb(231, 143, 183);
+  background-color: #737293;
+  position: fixed;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  margin: 1em auto;
+
 }
 .topmenu {
   display: flex;
